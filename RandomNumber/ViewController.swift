@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
   @IBAction func randomizeNumber(sender: AnyObject) {
   
     // when the button is pressed, hide keyboard
+    upperBoundField.resignFirstResponder()
     
     let string = upperBoundField.text
     let num = string.toInt()

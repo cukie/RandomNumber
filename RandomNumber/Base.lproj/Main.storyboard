@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upper Bound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-L1-o64">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper Bound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-L1-o64">
                                 <rect key="frame" x="248" y="212" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -58,10 +58,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="CAJ-L1-o64" secondAttribute="bottom" constant="8" symbolic="YES" id="0cy-YG-VLu"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3Xl-Al-liy" secondAttribute="bottom" constant="164" id="1DO-YP-RkR"/>
                             <constraint firstItem="JWC-Zj-NLG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ac7-iU-F5E"/>
                             <constraint firstItem="JWC-Zj-NLG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="BWS-lJ-D69"/>
                             <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="JWC-Zj-NLG" secondAttribute="bottom" constant="31" id="CCg-er-rff"/>
+                            <constraint firstItem="CAJ-L1-o64" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="DkF-NG-7va"/>
                             <constraint firstItem="3Xl-Al-liy" firstAttribute="top" secondItem="SOl-Nu-nXm" secondAttribute="bottom" constant="62" id="HMp-wA-8UG"/>
                             <constraint firstItem="3Xl-Al-liy" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="LYB-58-7c5"/>
                             <constraint firstItem="JWC-Zj-NLG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="ffi-Ot-tro"/>

@@ -15,6 +15,9 @@ class ViewController: UIViewController, UITextFieldDelegate  {
   @IBOutlet weak var displayNumber: UILabel!
   @IBOutlet weak var upperBoundField: UITextField!
   
+  @IBOutlet weak var randomizeButton: UIButton!
+  
+  
   @IBAction func randomizeNumber(sender: AnyObject) {
   
     // when the button is pressed, hide keyboard
@@ -26,7 +29,9 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     let rand = arc4random_uniform(unum)
     
     let toDisplay = String(rand)
-    self.displayNumber.text = toDisplay
+    //self.displayNumber.text = toDisplay
+    self.randomizeButton.setTitle(toDisplay, forState: UIControlState.Normal)
+    
     
     
   }
@@ -39,7 +44,17 @@ class ViewController: UIViewController, UITextFieldDelegate  {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.randomizeButton.layer.cornerRadius = self.randomizeButton.frame.height/2
+    self.randomizeButton.clipsToBounds = true
+    self.randomizeButton.layer.borderColor = UIColor.blueColor().CGColor
+    self.randomizeButton.layer.borderWidth = 1
     // Do any additional setup after loading the view, typically from a nib.
+//    
+//    let alertController = UIAlertController(title: "Press Button to Randomize", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+//    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+//    self.presentViewController(alertController, animated: true, completion: nil)
+    
   }
 
   override func didReceiveMemoryWarning() {

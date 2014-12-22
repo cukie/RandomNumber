@@ -12,9 +12,9 @@ import Foundation
 class ViewController: UIViewController, UITextFieldDelegate  {
   
   
-  @IBOutlet weak var displayNumber: UILabel!
   @IBOutlet weak var upperBoundField: UITextField!
   
+  @IBOutlet weak var rangeLabel: UILabel!
   @IBOutlet weak var randomizeButton: UIButton!
   
   
@@ -25,13 +25,13 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     
     let string = upperBoundField.text
     let num = string.toInt()
-    let unum = UInt32(num!)
+    let unum = UInt32(num! + 1)
     let rand = arc4random_uniform(unum)
     
     let toDisplay = String(rand)
     //self.displayNumber.text = toDisplay
     self.randomizeButton.setTitle(toDisplay, forState: UIControlState.Normal)
-    
+    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
     
     
   }
@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITextFieldDelegate  {
   
   override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     self.view.endEditing(true)
+    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
+
   }
   
   
@@ -49,6 +51,8 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     self.randomizeButton.clipsToBounds = true
     self.randomizeButton.layer.borderColor = UIColor.blueColor().CGColor
     self.randomizeButton.layer.borderWidth = 1
+    
+    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
     // Do any additional setup after loading the view, typically from a nib.
 //    
 //    let alertController = UIAlertController(title: "Press Button to Randomize", message: nil, preferredStyle: UIAlertControllerStyle.Alert)

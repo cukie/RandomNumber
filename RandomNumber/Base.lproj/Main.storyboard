@@ -16,54 +16,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Upper Bound" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-Nu-nXm">
+                                <rect key="frame" x="243" y="383" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Nb3-gO-kDU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xl-Al-liy">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <rect key="frame" x="175" y="125" width="250" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="VjT-1I-O4Y"/>
-                                    <constraint firstAttribute="width" constant="150" id="pap-6f-eu4"/>
+                                    <constraint firstAttribute="width" constant="250" id="Jhb-Wl-5eX"/>
+                                    <constraint firstAttribute="height" constant="250" id="smL-qB-pW8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <state key="normal">
+                                <state key="normal" title="Press">
                                     <color key="titleShadowColor" red="0.15453361742424243" green="0.15453361742424243" blue="0.15453361742424243" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="randomizeNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1EA-aa-jFn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Upper Bound" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-Nu-nXm">
-                                <rect key="frame" x="243" y="49" width="114" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgO-mY-Psg">
+                                <rect key="frame" x="130" y="486" width="341" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="F2I-Nh-bgp"/>
+                                    <constraint firstAttribute="width" constant="341" id="g9x-R9-Vx9"/>
+                                    <constraint firstAttribute="height" constant="68" id="tKA-EW-ZP7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper Bound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-L1-o64">
-                                <rect key="frame" x="248" y="20" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Xl-Al-liy" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="3Oo-vo-mgb"/>
-                            <constraint firstItem="CAJ-L1-o64" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="8AY-pG-jzf"/>
-                            <constraint firstItem="CAJ-L1-o64" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="M1l-c5-LdK"/>
-                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="CAJ-L1-o64" secondAttribute="bottom" constant="8" symbolic="YES" id="T57-TE-dYr"/>
-                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Xqn-T0-PNa"/>
-                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="centerX" secondItem="3Xl-Al-liy" secondAttribute="centerX" id="kFO-um-QdU"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QgO-mY-Psg" secondAttribute="bottom" constant="46" id="5p4-hz-edR"/>
+                            <constraint firstItem="3Xl-Al-liy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="105" id="BQ7-M2-vU4"/>
+                            <constraint firstItem="3Xl-Al-liy" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="Cgq-dP-py2"/>
+                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SOb-1z-agj"/>
+                            <constraint firstItem="QgO-mY-Psg" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="Us9-ud-VOs"/>
+                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="3Xl-Al-liy" secondAttribute="bottom" constant="8" symbolic="YES" id="fgT-vn-sTc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="randomizeButton" destination="3Xl-Al-liy" id="gX1-Ca-WHU"/>
+                        <outlet property="rangeLabel" destination="QgO-mY-Psg" id="UEz-8D-NU0"/>
                         <outlet property="upperBoundField" destination="SOl-Nu-nXm" id="Qti-kn-dTo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="336"/>
+            <point key="canvasLocation" x="414" y="296"/>
         </scene>
     </scenes>
 </document>

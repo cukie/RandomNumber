@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Upper Bound" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-Nu-nXm">
-                                <rect key="frame" x="243" y="383" width="114" height="30"/>
+                                <rect key="frame" x="243" y="412" width="114" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="Nb3-gO-kDU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xl-Al-liy">
-                                <rect key="frame" x="175" y="125" width="250" height="250"/>
+                                <rect key="frame" x="175" y="142" width="250" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Jhb-Wl-5eX"/>
@@ -53,11 +53,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QgO-mY-Psg" secondAttribute="bottom" constant="46" id="5p4-hz-edR"/>
-                            <constraint firstItem="3Xl-Al-liy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="105" id="BQ7-M2-vU4"/>
+                            <constraint firstItem="3Xl-Al-liy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="122" id="BQ7-M2-vU4"/>
                             <constraint firstItem="3Xl-Al-liy" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="Cgq-dP-py2"/>
+                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="3Xl-Al-liy" secondAttribute="bottom" constant="20" id="EiI-uQ-4lz"/>
                             <constraint firstItem="SOl-Nu-nXm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SOb-1z-agj"/>
                             <constraint firstItem="QgO-mY-Psg" firstAttribute="centerX" secondItem="SOl-Nu-nXm" secondAttribute="centerX" id="Us9-ud-VOs"/>
-                            <constraint firstItem="SOl-Nu-nXm" firstAttribute="top" secondItem="3Xl-Al-liy" secondAttribute="bottom" constant="8" symbolic="YES" id="fgT-vn-sTc"/>
                         </constraints>
                     </view>
                     <connections>

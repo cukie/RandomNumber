@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     let toDisplay = String(rand)
     //self.displayNumber.text = toDisplay
     self.randomizeButton.setTitle(toDisplay, forState: UIControlState.Normal)
-    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
+    self.rangeLabel.text = "Random number in range [0,\(upperBoundField.text)]"
     
     
   }
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
   
   override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     self.view.endEditing(true)
-    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
+    self.rangeLabel.text = "Random number in range [0,\(upperBoundField.text)]"
 
   }
   
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     self.randomizeButton.layer.borderColor = UIColor.blueColor().CGColor
     self.randomizeButton.layer.borderWidth = 1
     
-    self.rangeLabel.text = "Random number in range [1,\(upperBoundField.text)]"
+    self.rangeLabel.text = "Random number in range [0,\(upperBoundField.text)]"
     // Do any additional setup after loading the view, typically from a nib.
 //    
 //    let alertController = UIAlertController(title: "Press Button to Randomize", message: nil, preferredStyle: UIAlertControllerStyle.Alert)

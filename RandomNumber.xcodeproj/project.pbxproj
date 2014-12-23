@@ -405,6 +405,7 @@
 				CD45FE791A41D9740038267A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD45FE7A1A41D9740038267A /* Build configuration list for PBXNativeTarget "RandomNumberTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				CD45FE7C1A41D9740038267A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
